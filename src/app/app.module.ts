@@ -24,13 +24,14 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     PageNotFoundComponent
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule,
-    
     CoursesModule,
     StaticpagesModule,
     AdminModule,
-    AuthModule
+    AuthModule,
+    BrowserModule,
+    AppRoutingModule
+    
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
