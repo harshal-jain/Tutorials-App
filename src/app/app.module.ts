@@ -13,6 +13,9 @@ import { BannerComponent } from './banner/banner.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { EmployeeserviceService } from './auth/employeeservice.service';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -25,15 +28,17 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
   ],
   imports: [
     CoursesModule,
+    ReactiveFormsModule,
     StaticpagesModule,
     AdminModule,
     AuthModule,
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule
     
     
   ],
-  providers: [],
+  providers: [EmployeeserviceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
