@@ -18,6 +18,7 @@ export class LoginComponent implements OnInit {
   constructor(private employeeservice: EmployeeserviceService, private formbuilder: FormBuilder, private router: Router) { }
 
   ngOnInit(): void {
+    localStorage.removeItem('Employee');
     this.setFormState()
   }
 

@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  sess: any;
   constructor() { }
 
   ngOnInit(): void {
+    this.sess = localStorage.getItem("Employee");
   }
 
 }
